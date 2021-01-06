@@ -5,9 +5,9 @@
   "description": "Unofficial Electron wrapper for Apple Music",
   "main": "index.js",
   "author": {
-    "name": "progamesigner",
+    "name": "Yang Sheng Han",
     "email": "progamesigner@gmail.com",
-    "url": "https://github.com/progamesigner/apple-music-electron"
+    "url": "https://progamesigner.com"
   },
   "repository": {
     "type": "git",
