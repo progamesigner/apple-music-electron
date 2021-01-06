@@ -86,14 +86,15 @@ const createWindow = () => {
   window.once('ready-to-show', () => {
     window.show()
   })
+
+  // force exit electron when close button clicked
+  window.once('close', () => {
+    app.exit()
+  })
 }
 
 app.on('ready', function () {
   autoUpdater.checkForUpdatesAndNotify()
-})
-
-app.on('window-all-closed', () => {
-  app.quit()
 })
 
 app.on('widevine-ready', createWindow)
