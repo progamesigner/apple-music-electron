@@ -1,0 +1,9 @@
+/* hide "Open in iTunes" or "Open in Music" button */
+div.web-navigation__native-upsell {
+  display: none;
+}
+
+/* hide footer */
+footer.dt-footer {
+  display: none;
+}
