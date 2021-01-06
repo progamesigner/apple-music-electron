@@ -1,0 +1,33 @@
+{
+  "appId": "com.progamesigner.apple-music-electron",
+  "extends": null,
+  "electronDownload": {
+    "mirror": "https://github.com/castlabs/electron-releases/releases/download/v"
+  },
+  "files": [
+    "**/*",
+    "assets/*"
+  ],
+  "mac": {
+    "category": "public.app-category.music"
+  },
+  "linux": {
+    "category": "AudioVideo;Audio",
+    "desktop": {
+      "Name": "Apple Music",
+      "Comment": "Unofficial Apple Music client for Linux",
+      "StartupWMClass": "apple-music"
+    },
+    "target": [
+      "AppImage",
+      "tar.gz",
+      "deb",
+      "rpm"
+    ]
+  },
+  "win": {
+    "target": [
+      "nsis"
+    ]
+  }
+}

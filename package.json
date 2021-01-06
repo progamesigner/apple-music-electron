@@ -1,0 +1,38 @@
+{
+  "name": "apple-music-electron",
+  "productName": "Apple Music",
+  "version": "1.0.0",
+  "description": "Unofficial Electron wrapper for Apple Music",
+  "main": "index.js",
+  "author": {
+    "name": "progamesigner",
+    "email": "progamesigner@gmail.com",
+    "url": "https://github.com/progamesigner/apple-music-electron"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/progamesigner/apple-music-electron.git"
+  },
+  "homepage": "https://github.com/progamesigner/apple-music-electron#readme",
+  "license": "MIT",
+  "keywords": [
+    "Apple",
+    "Apple Music",
+    "Electron"
+  ],
+  "dependencies": {
+    "electron-updater": "^4.3.5",
+    "electron-window-state": "^5.0.3",
+    "v8-compile-cache": "^2.2.0"
+  },
+  "devDependencies": {
+    "electron": "github:castlabs/electron-releases#v11.1.1-wvvmp",
+    "electron-builder": "^22.9.1"
+  },
+  "scripts": {
+    "dist": "electron-builder build",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron ."
+  }
+}
